@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuổi trẻ tiên phong - Vững bước tương lai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8BC34A;
+            padding: 20px;
+        }
+        header h1, header h2 {
+            color: white;
+            margin: 5px 0;
+        }
+        .nav-links {
+            margin-top: 20px;
+        }
+        .nav-links a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .nav-links a:hover {
+            background-color: #3e8e41;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .footer-box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border: 3px solid #8BC34A;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer-box h2, .footer-box p {
+            margin: 10px 0;
+        }
+        .footer-box a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer-box a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/vi/0/09/Huy_Hi%E1%BB%87u_%C4%90o%C3%A0n.png" alt="Đoàn Thanh niên" width="100">
+    <h1>Báo tường lớp 12A6</h1>
+    <h2>Tuổi trẻ tiên phong - Vững bước tương lai</h2>
+</header>
+
+<div class="nav-links">
+    <a href="#" onclick="showContent('home')">Trang chủ</a>
+    <a href="#" onclick="showContent('gioi-thieu')">Giới thiệu</a>
+    <a href="#" onclick="showContent('y-nghia')">Ý nghĩa</a>
+    <a href="#" onclick="showContent('lich-su')">Lịch sử ra đời</a>
+    <a href="#" onclick="showContent('hinh-anh')">Hình ảnh</a>
+    <a href="dang-nhap.html">Đăng nhập</a>
+</div>
+<section id="content"></section>
+
+<footer class="footer-box">
+    <h2>Nhóm 4 - 12A6</h2>
+    <p>Email nhóm: <a href="mailto:nhom4.12a6@gmail.com">nhom4.12a6@gmail.com</a></p>
+    <p>Cập nhật ngày 25/1/2025</p>
+    <p>Nguồn ảnh từ Internet</p>
+    <form>
+        <textarea placeholder="Bình luận"></textarea>
+        <button>Đăng</button>
+    </form>
+</footer>
+
+<script>
+    function showContent(page) {
+        var content = document.getElementById("content");
+
+        if (page === "home") {
+            content.innerHTML = `
+                <p>Chào mừng mọi người đến với trang web của nhóm mình.</p>
+                <img src="https://ubmt.quangbinh.gov.vn/3cms/upload/ubmttqvt/Image/nam%202018/Thang%203/lich-su-ra-doi-ngay-26-3-1.jpg" width="1000">
+            `;
+        } else if (page === "gioi-thieu") {
+            content.innerHTML = "<h2>Giới thiệu sơ lược về Ngày thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh</h2><p>Đoàn Thanh niên Cộng sản Hồ Chí Minh là tổ chức chính trị - xã hội của thanh niên Việt Nam do Đảng Cộng sản Việt Nam và Chủ tịch Hồ Chí Minh sáng lập, lãnh đạo và rèn luyện. Đoàn bao gồm những thanh niên tiên tiến, phấn đấu vì mục đích, lý tưởng của Đảng là độc lập dân tộc gắn liền với chủ nghĩa xã hội, dân giàu, nước mạnh, dân chủ, công bằng, văn minh được thành lập vào ngày 26/3/1931</p><p>Sự ra đời của Đoàn là một dấu mốc quan trọng trong lịch sử cách mạng Việt Nam, khẳng định vai trò nòng cốt của thanh niên trong sự nghiệp đấu tranh giành độc lập dân tộc, xây dựng và bảo vệ Tổ quốc. Ngay từ những ngày đầu, Đoàn đã quy tụ những thanh niên tiên tiến, có ý chí, khát vọng cống hiến cho đất nước, kiên định mục tiêu độc lập dân tộc gắn liền với chủ nghĩa xã hội, vì một Việt Nam dân giàu, nước mạnh, dân chủ, công bằng, văn minh.</p><p>Sự ra đời của Đoàn là một dấu mốc quan trọng trong lịch sử cách mạng Việt Nam, khẳng định vai trò nòng cốt của thanh niên trong sự nghiệp đấu tranh giành độc lập dân tộc, xây dựng và bảo vệ Tổ quốc. Ngay từ những ngày đầu, Đoàn đã quy tụ những thanh niên tiên tiến, có ý chí, khát vọng cống hiến cho đất nước, kiên định mục tiêu độc lập dân tộc gắn liền với chủ nghĩa xã hội, vì một Việt Nam dân giàu, nước mạnh, dân chủ, công bằng, văn minh.</p>";
+        } else if (page === "y-nghia") {
+            content.innerHTML = "<h2>Ý nghĩa thành lập đoàn</h2><p>Cuối tháng 3 nǎm 1931, Trung ương Đảng Cộng sản Đông Dương đã triệu tập Hội nghị toàn thể lần thứ hai tại Sài Gòn, dưới sự chủ toạ của Tổng bí thư Trần Phú. Hội nghị đã đề ra những nhiệm vụ cấp bách và tǎng cường thành phần công nhân trong Đảng. Cũng tại Hội nghị này, nhận thấy vai trò của lực lượng thanh niên trong sự nghiệp cách mạng nên đã đề ra quyết định''Cần kíp tổ chức ra Cộng sản thanh niên Đoàn'' và chỉ thị cho các tổ chức Đảng ở các địa phương quan tâm đến việc xây dựng tổ chức Đoàn thanh niên. Từ đó, Đoàn TNCS Đông Dương ra đời. Qua các giai đoạn của Cách mạng, tổ chức này trải qua các tên gọi như: Đoàn thanh niên dân chủ, Đoàn thanh niên phản đế, Đoàn thanh niên cứu quốc, Đoàn thanh niên lao động và ngày nay là Đoàn thanh niên Cộng sản Hồ Chí Minh. Cùng đất nước, các thế hệ thanh niên Việt Nam đã làm tròn sứ mệnh lịch sử của mình. Từ ngày 23 đến ngày 25-5-1961, Đại hội đại biểu toàn quốc lần thứ ba của Đoàn lấy ngày 26-3, một ngày trong thời gian diễn ra Hội nghị Trung ương tháng 3-1931 làm kỷ niệm thành lập Đoàn.</p>";
+        } else if (page === "lich-su") {
+            content.innerHTML = `
+                <h2>Lịch sử ra đời của Đoàn thanh niên cộng sản Hồ Chí Minh</h2>
+                <p>Video giới thiệu về lịch sử ra đời của Đoàn Thanh niên Cộng sản Hồ Chí Minh:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9dgI_Qvfft4?si=im97VVQ3WTkIreRp" allowfullscreen></iframe>
+                <p>Mùa xuân năm 1931, từ ngày 20 đến ngày 26/3, tại Hội nghị Ban chấp hành Trung ương Đảng lần thứ 2, Trung ương Đảng đã giành một phần quan trọng trong chương trình làm việc để bàn về công tác thanh niên và đi đến những quyết định có ý nghĩa đặc biệt, như các cấp ủy Đảng từ Trung ương đến địa phương phải cử ngay các ủy viên của Đảng phụ trách công tác Đoàn.</p><p> Trước sự phát triển lớn mạnh của Đoàn trên cả 3 miền Bắc, Trung, Nam, ở nước ta xuất hiện nhiều tổ chức Đoàn cơ sở với khoảng 1.500 đoàn viên và một số địa phương đã hình thành tổ chức Đoàn từ xã, huyện đến cơ sở. </p><p>Sự phát triển lớn mạnh của Đoàn đã đáp ứng kịp thời những đòi hỏi cấp bách của phong trào thanh niên nước ta. Đó là sự vận động khách quan phù hợp với cách mạng nước ta; đồng thời, phản ánh công lao trời biển của Đảng, của Chủ tịch Hồ Chí Minh vô cùng kính yêu - Người đã sáng lập và rèn luyện tổ chức Đoàn. Được Bộ Chính trị Ban chấp hành Trung ương Đảng và Bác Hồ cho phép, theo đề nghị của Trung ương Đoàn thanh niên Lao động Việt Nam, Đại hội toàn quốc lần thứ 3 họp từ ngày 22 - 25/3/1961 đã quyết định lấy ngày 26/3/1931 (một ngày trong thời gian cuối của Hội nghị Trung ương Đảng lần thứ 2, dành để bàn bạc và quyết định những vấn đề rất quan trọng đối với công tác thanh niên) làm ngày thành lập Đoàn hàng năm. Ngày 26/3 trở thành ngày vẻ vang của tuổi trẻ Việt Nam, của Đoàn Thanh niên cộng sản Hồ Chí Minh quang vinh.</p><p>- Từ ngày 26/3/1931 đến nay, để phù hợp với yêu cầu nhiệm vụ của từng thời kỳ cách mạng, Đoàn đã đổi tên nhiều lần.</p><p>- Từ ngày 26/3/1931 đến nay, để phù hợp với yêu cầu nhiệm vụ của từng thời kỳ cách mạng, Đoàn đã đổi tên nhiều lần:</p><p>- Từ 1931 - 1936: Đoàn TNCS Việt Nam, Đoàn TNCS Đông Dương</p><p>- Từ 1937 - 1939: Đoàn Thanh niên Dân chủ Đông Dương</p><p>- Từ 11/1939 - 1941: Đoàn Thanh niên phản đế Đông Dương</p><p>- Từ 5/1941 - 1956: Đoàn Thanh niên cứu quốc Việt Nam</p><p>- Từ 25/10/1956 - 1970: Đoàn Thanh niên Lao động Việt Nam</p><p>- Từ 2/1970 - 11/1976: Đoàn Thanh niên lao động Hồ Chí Minh</p><p>- Từ 12/1976 đến nay: Đoàn Thanh niên cộng sản Hồ Chí Minh</p><p>Những thế hệ thanh niên kế tiếp nhau đã chiến đấu anh dũng vì độc lập tự do của Tổ Quốc, vì chủ nghĩa xã hội đã liên tiếp lập nên những chiến công xuất sắc và trưởng thành vượt bậc.</p>
+            `;
+        } else if (page === "hinh-anh") {
+            content.innerHTML = `
+                <h2> Một số hình ảnh liên quan đến Đoàn Thanh niên Cộng sản Hồ Chí Minh</h2>
+                <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/465563463_1062922928963200_8688014226086041483_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-gYXQrofZLgQ7kNvgG3pkY-&_nc_oc=AdgQRvd8AL0oUoENc5qduLAYTyemMUtwmb-j8DsyU6tsw8lPR8c_E5wgZE-ZGMZHtvU&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Abd9f_-0GLVnwv_PcAzL68T&oh=00_AYDL78s4EONqySaNzXKuwlNqS0pWmV_vxxmTlHvcsjWFKg&oe=67B654B9"width="1000">
+                <p> Logo đại biểu Đoàn TNCS Hồ Chí Minh của Trường THPT Ernst Thalmann nhiệm kì 2024-2025 </p>
+                 <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/392890282_830124245576404_3905371358380960018_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=r3U7vQP93BoQ7kNvgGff0r3&_nc_oc=AdhmkFfU9ue0G5xqQ7FQ3RhkhesjTZxiUQxndlzTwhCqvY-Yf1jDpe4-6ROdx3XTHAc&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=AK2kGLzi40eN6Pn5hIb-pVM&oh=00_AYCCUKzA-kAlNfsoXzg0M1JQVnNyRcORPuVgGx_HadUHDQ&oe=67B65239"width="1000">
+                 <p> Lễ kết nạp đoàn viên mới của Trường THPT Ernst Thalmann </p>
+                 <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/462926065_1048645830390910_7716319453314876131_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=odJCqj2nuJwQ7kNvgGqc9wQ&_nc_oc=AdjHRK6vXQKIUepZOotMe6EvpO3Mw_cdbL2x7H_M2a7cTOngiBDbC8o47U_vUMrTNCE&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=AYfas8czS1JGcK31sdVMNIc&oh=00_AYBLUk_OaVbWd1QvYe8pCtGS-z1T13F4ynNFBKIIvcmdFg&oe=67B659E1"width="1000">
+                 <p> Hình ảnh trao huy hiệu Đoàn của Trường THPT Ernst Thalmann </p>
+                 <img src="https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/462831168_1048645897057570_384020732125066918_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=roIKbaYtftYQ7kNvgGNZdJ3&_nc_oc=AdhduB8SY1D_AxFke4q-b6I4B5kDm6uYiFZiqfYxd9lEFc-afksQ4MhJHa9F0I_PzhY&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=Av3zKRH5wI-YqYsaFLXnx7T&oh=00_AYB__gZFAY_NSBHbtTU6A3NkZ8nkU6fgcMH3GVzBIHhJ1w&oe=67B64F1C"width="1000">
+                 <p> Hình ảnh thầy Nguyễn Hùng Khương - Hiệu trưởng của Trường THPT Ernst Thalmann nhiệm kỳ 2023-2028 đang trao giấy chứng nhận Đoàn </p>
+                 `;
+        }
+    }
+
+
+    // Hiển thị nội dung trang chủ khi tải trang
+    window.onload = function() {
+        showContent('home');
+    };
+</script>
+
+</body>
+</html>
